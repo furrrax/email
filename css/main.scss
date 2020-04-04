@@ -1,35 +1,5 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0px;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-ul, p, h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-.wrapper {
-    width: 600px;
-    margin: 0 auto;
-}
-
-.container {
-    width: 560px;
-    margin: 0 auto;
-}
+@import "normalize.css";
+@import "base.scss";
 
 .header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.21) 100%), rgba(0, 0, 0, 0.5);
@@ -150,7 +120,6 @@ a {
 }
 
 .services {
-    margin-top: 40px;
     &__title {
         text-align: center;
         margin-bottom: 48px;
@@ -199,5 +168,159 @@ a {
             margin-top: 17px;
             line-height: 16px;
         }
+    }
+}
+
+.advantages {
+    background-image: url("../img/services/services-bg.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-bottom: 23px;
+    &-section {
+        margin-top: 19px;
+    }
+    &__container {
+        width: 100%;
+    }
+    &__content {
+        margin-left: 67px;
+    }
+    &__item {
+        &-1, &-2 {
+            margin-bottom: 7px;
+        }
+    }
+    &__title {
+        text-align: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #000000;
+        line-height: 21px;
+    }
+    &__content {
+        margin-top: 12px;
+    }
+    &__icon {
+        display: inline;
+        margin-right: 14px;
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+    }
+    &__pic {
+        width: 14px;
+        height: 12px;
+    }
+    &__desc {
+        display: inline-block;
+        max-width: 450px;
+    }
+    &__subtitle {
+        display: inline-block;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+    }
+    &__text {
+        display: inline;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #7B7B7B;
+    }
+}
+
+.order {
+    padding-top: 22px;
+    &__text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: justify;
+        color: #7B7B7B;
+        strong {
+            color: #000000;
+        }
+    }
+    &__buttons {
+        margin-top: 14px;
+    }
+    &__btn {
+        width: 270px;
+        height: 50px;
+        display: inline-block;
+
+        &-email, &-text, &-phone {
+            font-family: Roboto;
+            font-style: normal;
+            color: #000000;
+            text-align: center;
+        }
+
+        &-email {
+            background-color: #C4C4C4;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            padding-top: 16px;
+        }
+        &-call {
+            background-color: #F2F2F2;
+            float: right;
+            padding-top: 4px;
+        }
+        &-text {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        &-phone {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 14px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.consult {
+    margin-top: 20px;
+    &__title {
+        margin-bottom: 15px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px; 
+        color: #000000; 
+    }
+    &__list {
+        padding-left: 25px;
+    }
+    &__icon {
+        display: inline-block;
+        color: #A4A4A4;
+        vertical-align: top;
+    }
+    &__desc {
+        display: inline-block;
+        max-width: 440px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        color: #A4A4A4;
     }
 }
