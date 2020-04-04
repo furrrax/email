@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head style="box-sizing: border-box;">
+  <meta charset="UTF-8" style="box-sizing: border-box;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" style="box-sizing: border-box;">
+
+
+  <title style="box-sizing: border-box;">Email</title>
+</head>
+
+<body style="box-sizing: border-box; font-size: 18px; margin: 0px; text-decoration: none;">
+  <style>
+    @media screen and (max-width: 550px) {
+      .wrapper {
+        width: 375px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .container {
+        width: 335px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .header__btn {
+        border: unset;
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 10px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .hello__welcome-desc {
+        width: 57%;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .hello__welcome-title-text {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .hello__welcome-title-separator {
+        width: 72px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .hello__welcome-text p {
+        font-size: 9px;
+        line-height: 10px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .hello__gallery-pic-1,
+      .hello__gallery-pic-2 {
+        margin-right: 5px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .hello__gallery-pic {
+        width: 108px;
+        height: 123px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .services__title {
+        margin-bottom: 26px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .services__title__separator {
+        width: 86px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .services__title-text {
+        font-size: 14px;
+        line-height: 16px;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .services__icons__item {
+        width: 75px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .services__icons__item-01,
+      .services__icons__item-02,
+      .services__icons__item-03,
+      .services__icons__item-05 {
+        margin-right: 7px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .services__icons__img {
+        width: 38px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .services__icons__text {
+        font-size: 9px;
+        line-height: 11px;
+        margin-top: 2px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .advantages__content {
+        padding-left: 20px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .advantages__item-1,
+      .advantages__item-2 {
+        margin-bottom: 0;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .advantages__title {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .advantages__icon {
+        margin-right: 3px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .advantages__pic {
+        width: 10px;
+        height: 9px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .advantages__desc {
+        max-width: 320px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .advantages__subtitle {
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .advantages__text {
+        font-size: 9px;
+        line-height: 11px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .order {
+        padding-top: 20px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .order__text {
+        font-size: 9px;
+        line-height: 11px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .order__btn {
+        width: 157px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .order__btn-email {
+        font-size: 12px;
+        line-height: 14px;
+        padding-top: 18px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .order__btn-text {
+        font-size: 10px;
+        line-height: 14px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .order__btn-phone {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 0;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .consult {
+        margin-top: 23px;
+        padding-bottom: 18px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .consult__title,
+      .consult__text {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .consult__desc {
+        font-size: 10px;
+        line-height: 12px;
+        max-width: 295px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .footer__logo {
+        margin-right: 15px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .footer__logo-img {
+        width: 102px;
+        height: 34px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .footer__times {
+        font-size: 10px;
+        line-height: 13px;
+        margin-right: 14px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .footer__designed {
+        display: none;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .footer__btn {
+        font-size: 10px;
+        line-height: 12px;
+        width: 78px;
+        text-align: center;
+        padding: 10px;
+      }
+    }
+  </style>
+  <div class="wrapper" style="box-sizing: border-box; margin: 0 auto; width: 600px;">
+    <div class="maincontent" style="box-sizing: border-box;">
+      <div class="header" style="background: url('./img/header-bg.jpg'); background-color: #7f7f7f; background-position: center center; background-repeat: no-repeat; background-size: cover; box-sizing: border-box; height: 100%; padding-bottom: 100px; padding-top: 10px;">
+        <div class="header__container container" style="box-sizing: border-box; margin: 0 auto; width: 560px;">
+          <div class="header__top" style="box-sizing: border-box;">
+            <a class="header__logo logo" href="#" style="background-color: transparent; box-sizing: border-box; display: inline-block; text-decoration: none;"><img class="header__logo-img" src="./img/logo.png" alt="Логотип" style="border-style: none; box-sizing: border-box;"></a><a class="header__btn btn" href="#" style="background-color: transparent; border: 2px solid #ffffff; box-sizing: border-box; color: #ffffff; display: inline-block; float: right; font-family: 'Roboto', sans-serif; font-size: 12px; font-style: normal; font-weight: 500; margin-top: 7px; padding: 11px 18px; text-decoration: none;">Заказать звонок</a></div>
+          <div class="header__title" style="box-sizing: border-box; color: #ffffff; font-family: 'Roboto', sans-serif; font-size: 24px; font-style: normal; font-weight: bold; line-height: 28px; margin-top: 90px; text-align: center;">
+            <div class="header__title-1" style="box-sizing: border-box;">Давайте знакомиться</div>
+            <div class="header__title-2" style="box-sizing: border-box; display: inline-block;">Творческая группа</div>
+            <div class="header__title-3" style="box-sizing: border-box; display: inline-block;">Tower Art Group</div>
+          </div>
+        </div>
+      </div>
+      <div class="hello" style="box-sizing: border-box; margin-top: 20px;">
+        <div class="hello__container container" style="box-sizing: border-box; margin: 0 auto; width: 100%;">
+          <div class="hello__welcome" style="box-sizing: border-box; margin-left: 20px;">
+            <div class="hello__welcome-photo" style="box-sizing: border-box; display: inline-block; margin-right: 20px; vertical-align: top;"><img class="hello__welcome-img" src="./img/welcome/welcome-photo.jpg" alt="Фотография" style="border-style: none; box-sizing: border-box; height: 166px; width: 125px;"></div>
+            <div class="hello__welcome-desc" style="box-sizing: border-box; display: inline-block; width: 74%;">
+              <div class="hello__welcome-title" style="box-sizing: border-box;">
+                <div class="hello__welcome-title-text" style="box-sizing: border-box; display: inline-block; font-family: 'Roboto', sans-serif; font-size: 18px; font-style: normal; font-weight: bold; line-height: 21px; margin-right: 7px;">Приветствую вас!</div>
+                <div class="hello__welcome-title-separator" style="border-top: 2px solid #000000; box-sizing: border-box; display: inline-block; vertical-align: middle; width: 265px;"></div>
+              </div>
+              <div class="hello__welcome-text" style="box-sizing: border-box; margin-top: 16px; padding-right: 20px;">
+                <p style="box-sizing: border-box; color: #7B7B7B; font-family: 'Roboto', sans-serif; font-size: 12px; font-style: normal; font-weight: 300; line-height: 14px; margin: 0; padding: 0; text-align: justify;">Меня зовут <strong style="box-sizing: border-box; color: #000000; font-weight: 700;">Дианова Елена</strong>. Я основатель <strong style="box-sizing: border-box; color: #000000; font-weight: 700;">Группы компаний «Tower Art Group»</strong>.</p>
+                <p style="box-sizing: border-box; color: #7B7B7B; font-family: 'Roboto', sans-serif; font-size: 12px; font-style: normal; font-weight: 300; line-height: 14px; margin: 0; padding: 0; text-align: justify;">От лица команды <strong style="box-sizing: border-box; color: #000000; font-weight: 700;">«Tower Art Group»</strong> предлагаю дружбу и взаимовыгодное сотрудничество. Хочу, чтобы вы обращались в <strong style="box-sizing: border-box; color: #000000; font-weight: 700;">«Tower Art Group»</strong>                  и чувствовали себя по-домашнему, как у старого друга в гостях. Скажу так. Когда вы придёте к нам, всю рутину мы возьмём на себя. Каждый специалист <strong style="box-sizing: border-box; color: #000000; font-weight: 700;">«Tower Art Group»</strong>                  скидывает мешки забот с ваших плеч, чтобы путь к реализации вашего проекта был максимально простым.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hello__container-gallery container" style="box-sizing: border-box; margin: 0 auto; margin-top: 20px; width: 560px;">
+          <div class="hello__gallery" style="box-sizing: border-box;"><img class="hello__gallery-pic hello__gallery-pic-1" src="./img/welcome/welcome-gallery-1.jpg" alt="Картинка с интерьером" style="border-style: none; box-sizing: border-box; height: 206px; margin-right: 7px; width: 181px;"><img class="hello__gallery-pic hello__gallery-pic-2"
+              src="./img/welcome/welcome-gallery-2.jpg" alt="Картинка с домом" style="border-style: none; box-sizing: border-box; height: 206px; margin-right: 7px; width: 181px;"><img class="hello__gallery-pic hello__gallery-pic-3" src="./img/welcome/welcome-gallery-3.jpg"
+              alt="Картинка с ландшафтом" style="border-style: none; box-sizing: border-box; height: 206px; width: 181px;"></div>
+        </div>
+      </div>
+      <div class="advantages" style="background: url('./img/services/services-bg.jpg'); background-position: bottom; background-repeat: no-repeat; box-sizing: border-box; padding-bottom: 23px; padding-top: 40px;">
+        <div class="services" style="box-sizing: border-box;">
+          <div class="services__container container" style="box-sizing: border-box; margin: 0 auto; width: 560px;">
+            <div class="services__title" style="box-sizing: border-box; margin-bottom: 48px; text-align: center;">
+              <div class="services__title__separator services__title__separator-left" style="border-top: 2px solid #000000; box-sizing: border-box; display: inline-block; vertical-align: middle; width: 98px;"></div>
+              <div class="services__title-text" style="box-sizing: border-box; color: #000000; display: inline-block; font-family: Roboto; font-size: 18px; font-style: normal; font-weight: 900; margin-left: 10px; margin-right: 10px; text-transform: uppercase;">Наши услуги</div>
+              <div class="services__title__separator services__title__separator-right" style="border-top: 2px solid #000000; box-sizing: border-box; display: inline-block; vertical-align: middle; width: 98px;"></div>
+            </div>
+            <div class="services__icons" style="box-sizing: border-box; text-align: center;">
+              <div class="services__icons__row services__icons__row-1" style="box-sizing: border-box; margin-bottom: 25px;">
+                <div class="services__icons__item services__icons__item-01" style="box-sizing: border-box; display: inline-block; margin-right: 15px; text-align: center; vertical-align: top; width: 125px;"><img class="services__icons__img services__icons__img-01" src="./img/services/services-icon-1.png" alt="" style="border-style: none; box-sizing: border-box;">
+                  <div class="services__icons__text" style="box-sizing: border-box; color: #000000; font-family: Roboto; font-size: 12px; font-style: normal; font-weight: 500; line-height: 16px; margin-top: 17px;">Индивидуальный проект дома</div>
+                </div>
+                <div class="services__icons__item services__icons__item-02" style="box-sizing: border-box; display: inline-block; margin-right: 15px; text-align: center; vertical-align: top; width: 125px;"><img class="services__icons__img services__icons__img-02" src="./img/services/services-icon-2.png" alt="" style="border-style: none; box-sizing: border-box;">
+                  <div class="services__icons__text" style="box-sizing: border-box; color: #000000; font-family: Roboto; font-size: 12px; font-style: normal; font-weight: 500; line-height: 16px; margin-top: 17px;">Дизайн интерьера</div>
+                </div>
+                <div class="services__icons__item services__icons__item-03" style="box-sizing: border-box; display: inline-block; margin-right: 15px; text-align: center; vertical-align: top; width: 125px;"><img class="services__icons__img services__icons__img-03" src="./img/services/services-icon-3.png" alt="" style="border-style: none; box-sizing: border-box;">
+                  <div class="services__icons__text" style="box-sizing: border-box; color: #000000; font-family: Roboto; font-size: 12px; font-style: normal; font-weight: 500; line-height: 16px; margin-top: 17px;">Ландшафтный дизайн и Фитодизайн</div>
+                </div>
+                <div class="services__icons__item services__icons__item-04" style="box-sizing: border-box; display: inline-block; text-align: center; vertical-align: top; width: 125px;"><img class="services__icons__img services__icons__img-04" src="./img/services/services-icon-4.png" alt="" style="border-style: none; box-sizing: border-box;">
+                  <div class="services__icons__text" style="box-sizing: border-box; color: #000000; font-family: Roboto; font-size: 12px; font-style: normal; font-weight: 500; line-height: 16px; margin-top: 17px;">Авторский надзор</div>
+                </div>
+              </div>
+              <div class="services__icons__row services__icons__row-2" style="box-sizing: border-box;">
+                <div class="services__icons__item services__icons__item-05" style="box-sizing: border-box; display: inline-block; margin-right: 15px; text-align: center; vertical-align: top; width: 125px;"><img class="services__icons__img services__icons__img-05" src="./img/services/services-icon-5.png" alt="" style="border-style: none; box-sizing: border-box;">
+                  <div class="services__icons__text" style="box-sizing: border-box; color: #000000; font-family: Roboto; font-size: 12px; font-style: normal; font-weight: 500; line-height: 16px; margin-top: 17px;">Сопровождение проекта</div>
+                </div>
+                <div class="services__icons__item services__icons__item-06" style="box-sizing: border-box; display: inline-block; text-align: center; vertical-align: top; width: 125px;"><img class="services__icons__img services__icons__img-06" src="./img/services/services-icon-6.png" alt="" style="border-style: none; box-sizing: border-box;">
+                  <div class="services__icons__text" style="box-sizing: border-box; color: #000000; font-family: Roboto; font-size: 12px; font-style: normal; font-weight: 500; line-height: 16px; margin-top: 17px;">Согласование перепланировки жилых и нежилых помещений</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="advantages-section" style="box-sizing: border-box; margin-top: 19px;">
+          <div class="advantages__container container" style="box-sizing: border-box; margin: 0 auto; width: 100%;">
+            <div class="advantages__title" style="box-sizing: border-box; color: #000000; font-family: Roboto; font-size: 18px; font-style: normal; font-weight: 500; line-height: 21px; text-align: center;">Почему именно мы?</div>
+            <div class="advantages__content" style="box-sizing: border-box; margin-top: 12px; padding-left: 67px;">
+              <div class="advantages__item advantages__item-1" style="box-sizing: border-box; margin-bottom: 7px;">
+                <div class="advantages__icon" style="box-sizing: border-box; display: inline; height: 100%; margin-right: 14px; vertical-align: top; width: 100%;"><img class="advantages__pic" src="./img/services/tick.png" alt="иконка" style="border-style: none; box-sizing: border-box; height: 12px; width: 14px;"></div>
+                <div class="advantages__desc" style="box-sizing: border-box; display: inline-block; max-width: 450px;">
+                  <div class="advantages__subtitle" style="box-sizing: border-box; color: #000000; display: inline-block; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: bold; line-height: 16px; text-transform: uppercase;">Сроки -</div>
+                  <div class="advantages__text" style="box-sizing: border-box; color: #7B7B7B; display: inline; font-family: Roboto; font-size: 12px; font-style: normal; font-weight: normal; line-height: 14px;">Вы экономите свое время, так как используете нашу услугу</div>
+                </div>
+              </div>
+              <div class="advantages__item advantages__item-2" style="box-sizing: border-box; margin-bottom: 7px;">
+                <div class="advantages__icon" style="box-sizing: border-box; display: inline; height: 100%; margin-right: 14px; vertical-align: top; width: 100%;"><img class="advantages__pic" src="./img/services/tick.png" alt="иконка" style="border-style: none; box-sizing: border-box; height: 12px; width: 14px;"></div>
+                <div class="advantages__desc" style="box-sizing: border-box; display: inline-block; max-width: 450px;">
+                  <div class="advantages__subtitle" style="box-sizing: border-box; color: #000000; display: inline-block; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: bold; line-height: 16px; text-transform: uppercase;">Цена -</div>
+                  <div class="advantages__text" style="box-sizing: border-box; color: #7B7B7B; display: inline; font-family: Roboto; font-size: 12px; font-style: normal; font-weight: normal; line-height: 14px;">Мы экономим Ваши деньги. У нас работают свои подрядчики, благодаря этому стоимость наших услуг в среднем на 10% ниже.</div>
+                </div>
+              </div>
+              <div class="advantages__item" style="box-sizing: border-box;">
+                <div class="advantages__icon" style="box-sizing: border-box; display: inline; height: 100%; margin-right: 14px; vertical-align: top; width: 100%;"><img class="advantages__pic" src="./img/services/tick.png" alt="иконка" style="border-style: none; box-sizing: border-box; height: 12px; width: 14px;"></div>
+                <div class="advantages__desc" style="box-sizing: border-box; display: inline-block; max-width: 450px;">
+                  <div class="advantages__subtitle" style="box-sizing: border-box; color: #000000; display: inline-block; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: bold; line-height: 16px; text-transform: uppercase;">Качество -</div>
+                  <div class="advantages__text" style="box-sizing: border-box; color: #7B7B7B; display: inline; font-family: Roboto; font-size: 12px; font-style: normal; font-weight: normal; line-height: 14px;">В штате команды нет места случайным людям без опыта. Каждый сотрудник влюблен в свое дело, поэтому о заурядном и типовом исполнении даже речи быть не может.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order" style="box-sizing: border-box; padding-top: 22px;">
+        <div class="order__container container" style="box-sizing: border-box; margin: 0 auto; width: 560px;">
+          <div class="order__text" style="box-sizing: border-box; color: #7B7B7B; font-family: Roboto; font-size: 12px; font-style: normal; font-weight: 300; line-height: 16px; text-align: justify;">
+            <p style="box-sizing: border-box; margin: 0; padding: 0;">Группа компаний <strong style="box-sizing: border-box; color: #000000; font-weight: bolder;">«Tower Art Group»</strong> проектирует и строит дома под ключ, занимается разработкой дизайн проектов и отделкой, проектирует и реализует ландшафтный
+              дизайн, малые архитектурные формы, от мобильных до стационарных, разрабатывает проекты по созданию декоративных водоемов, фитодизайн в интерьере и зимние сады. </p>
+            <p style="box-sizing: border-box; margin: 0; padding: 0;">Группа компаний <strong style="box-sizing: border-box; color: #000000; font-weight: bolder;">«Tower Art Group»</strong> предоставляет полный спектр услуг по согласованию перепланировки (переустройства) в любых административных инстанциях города
+              Москвы и Московской области.</p><br style="box-sizing: border-box;">
+            <p style="box-sizing: border-box; margin: 0; padding: 0;"><strong style="box-sizing: border-box; color: #000000; font-weight: bolder;">А ещё мы следим за тенденциями моды в мире интерьеров, архитектуры, ландшафтного дизайна и фитодизайна. Стабильно посещаем выставки, чтобы выбрать лучшие решения для Вас.</strong></p>
+            <br
+              style="box-sizing: border-box;">
+              <p style="box-sizing: border-box; margin: 0; padding: 0;"><strong style="box-sizing: border-box; color: #000000; font-weight: bolder;">Лучше я докажу на деле, а не на словах, что с нами работать в кайф.</strong></p><br style="box-sizing: border-box;">
+              <p style="box-sizing: border-box; margin: 0; padding: 0;"><strong style="box-sizing: border-box; color: #000000; font-weight: bolder;">Жмите на кнопку и оставляйте заявку. В течение 10-15 минут мы свяжемся с вами. Договоримся о встрече в удобное для Вас время и определим место, где и обсудим детали сотрудничества.</strong></p>
+          </div>
+          <div class="order__buttons" style="box-sizing: border-box; margin-top: 14px;">
+            <a class="order__btn order__btn-email" href="mailto:#" style="background-color: #C4C4C4; box-sizing: border-box; color: #000000; display: inline-block; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 500; height: 50px; line-height: 19px; padding-top: 16px; text-align: center; text-decoration: none; text-transform: uppercase; width: 270px;">
+              <div class="order__btn-email-text" style="box-sizing: border-box;"> Оставить заявку</div>
+            </a>
+            <a class="order__btn order__btn-call" href="tel:+74957732133" style="background-color: #F2F2F2; box-sizing: border-box; display: inline-block; float: right; height: 50px; padding-top: 4px; text-decoration: none; width: 270px;">
+              <div class="order__btn-text" style="box-sizing: border-box; color: #000000; font-family: Roboto; font-size: 12px; font-style: normal; font-weight: normal; line-height: 14px; text-align: center;">А лучше звоните сразу по телефону:</div>
+              <div class="order__btn-phone" style="box-sizing: border-box; color: #000000; font-family: Roboto; font-size: 24px; font-style: normal; font-weight: 700; line-height: 14px; margin-top: 10px; text-align: center;">+7 495 773 -21- 33</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="consult" style="box-sizing: border-box; margin-top: 20px; padding-bottom: 26px;">
+        <div class="consult__container container" style="box-sizing: border-box; margin: 0 auto; width: 560px;">
+          <div class="consult__title" style="box-sizing: border-box; color: #000000; font-family: Roboto; font-size: 18px; font-style: normal; font-weight: 500; line-height: 21px; margin-bottom: 15px;">На консультации мы с Вами обсудим:</div>
+          <ul class="consult__list" style="box-sizing: border-box; margin: 0; margin-bottom: 15px; padding: 0; padding-left: 25px;">
+            <li class="consult__item" style="box-sizing: border-box; list-style: none;">
+              <div class="consult__icon" style="box-sizing: border-box; color: #A4A4A4; display: inline-block; vertical-align: top;">
+                <div class="consult__icon-item" style="box-sizing: border-box;">–</div>
+              </div>
+              <div class="consult__desc" style="box-sizing: border-box; color: #A4A4A4; display: inline-block; font-family: Roboto; font-size: 12px; font-style: normal; font-weight: 300; line-height: 14px; max-width: 440px;">состав проекта;</div>
+            </li>
+            <li class="consult__item" style="box-sizing: border-box; list-style: none;">
+              <div class="consult__icon" style="box-sizing: border-box; color: #A4A4A4; display: inline-block; vertical-align: top;">
+                <div class="consult__icon-item" style="box-sizing: border-box;">–</div>
+              </div>
+              <div class="consult__desc" style="box-sizing: border-box; color: #A4A4A4; display: inline-block; font-family: Roboto; font-size: 12px; font-style: normal; font-weight: 300; line-height: 14px; max-width: 440px;">Ваши предпочтения по стилю и колористике;</div>
+            </li>
+            <li class="consult__item" style="box-sizing: border-box; list-style: none;">
+              <div class="consult__icon" style="box-sizing: border-box; color: #A4A4A4; display: inline-block; vertical-align: top;">
+                <div class="consult__icon-item" style="box-sizing: border-box;">–</div>
+              </div>
+              <div class="consult__desc" style="box-sizing: border-box; color: #A4A4A4; display: inline-block; font-family: Roboto; font-size: 12px; font-style: normal; font-weight: 300; line-height: 14px; max-width: 440px;">примеры наших проектов;</div>
+            </li>
+            <li class="consult__item" style="box-sizing: border-box; list-style: none;">
+              <div class="consult__icon" style="box-sizing: border-box; color: #A4A4A4; display: inline-block; vertical-align: top;">
+                <div class="consult__icon-item consult__icon-item-big" style="box-sizing: border-box; line-height: 10px;">–</div>
+              </div>
+              <div class="consult__desc" style="box-sizing: border-box; color: #A4A4A4; display: inline-block; font-family: Roboto; font-size: 12px; font-style: normal; font-weight: 300; line-height: 14px; max-width: 440px;">новости из мира дизайна, архитектуры, ландшафтного дизайна и фитодизайна;</div>
+            </li>
+            <li class="consult__item" style="box-sizing: border-box; list-style: none;">
+              <div class="consult__icon" style="box-sizing: border-box; color: #A4A4A4; display: inline-block; vertical-align: top;">
+                <div class="consult__icon-item" style="box-sizing: border-box;">–</div>
+              </div>
+              <div class="consult__desc" style="box-sizing: border-box; color: #A4A4A4; display: inline-block; font-family: Roboto; font-size: 12px; font-style: normal; font-weight: 300; line-height: 14px; max-width: 440px;">акции и выгодные предложения от официальных дилеров.</div>
+            </li>
+          </ul>
+          <div class="consult__text" style="box-sizing: border-box; color: #000000; font-family: Roboto; font-size: 18px; font-style: normal; font-weight: 500; line-height: 21px;">До встречи!</div>
+        </div>
+      </div>
+      <div class="footer" style="background-color: #1F1F1F; box-sizing: border-box; padding-bottom: 15px; padding-top: 15px;">
+        <div class="footer__container container" style="box-sizing: border-box; margin: 0 auto; width: 560px;">
+          <a class="footer__logo logo" href="#" style="background-color: transparent; box-sizing: border-box; display: inline-block; margin-right: 10px; text-decoration: none; vertical-align: middle;"><img class="footer__logo-img logo-img" src="./img/logo.png" alt="Логотип" style="border-style: none; box-sizing: border-box; height: 50px; width: 150px;"></a>
+          <div class="footer__times" style="box-sizing: border-box; color: #999999; display: inline-block; font-family: Roboto; font-size: 12px; font-style: normal; font-weight: normal; line-height: 13px; margin-right: 15px; vertical-align: middle;">
+            <div class="footer__times-row-1" style="box-sizing: border-box;">ПН – ПТ с 10-00 до 22-00</div>
+            <div class="footer__times-row-2" style="box-sizing: border-box;">СБ с 11-00 до 20-00</div>
+            <div class="footer__times-row-3" style="box-sizing: border-box;">ВС - выходной</div>
+          </div>
+          <div class="footer__designed" style="box-sizing: border-box; display: inline-block; margin-right: 10px; vertical-align: middle;">
+            <div class="footer__designed-logo" style="box-sizing: border-box;"><img class="footer__designed-logo-img" src="./img/footer/design-logo.png" alt="" style="border-style: none; box-sizing: border-box;"></div>
+          </div><a class="footer__btn btn" href="#" style="background-color: transparent; border: 2px solid #ffffff; box-sizing: border-box; color: #ffffff; display: inline-block; font-family: 'Roboto', sans-serif; font-size: 12px; font-style: normal; font-weight: 500; padding: 11px 18px; text-decoration: none; vertical-align: middle;">Перейти на сайт</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
