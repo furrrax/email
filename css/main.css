@@ -34,20 +34,9 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%; }
-  .header__logo {
-    display: inline-block; }
-    .header__logo-img {
-      width: 150px;
-      height: 50px; }
   .header__btn {
     display: inline-block;
-    padding: 11px 18px;
-    border: 2px solid #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 12px;
-    color: #ffffff;
     float: right;
     margin-top: 7px; }
   .header__title {
@@ -63,6 +52,20 @@ a {
       display: inline-block; }
     .header__title-3 {
       display: inline-block; }
+
+.btn {
+  padding: 11px 18px;
+  border: 2px solid #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #ffffff; }
+
+.logo {
+  display: inline-block; }
+  .logo-img {
+    width: 150px;
+    height: 50px; }
 
 .hello {
   margin-top: 20px; }
@@ -251,21 +254,26 @@ a {
       margin-top: 10px; }
 
 .consult {
-  margin-top: 20px; }
-  .consult__title {
-    margin-bottom: 15px;
+  margin-top: 20px;
+  padding-bottom: 26px; }
+  .consult__title, .consult__text {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
     color: #000000; }
+  .consult__title {
+    margin-bottom: 15px; }
   .consult__list {
-    padding-left: 25px; }
+    padding-left: 25px;
+    margin-bottom: 15px; }
   .consult__icon {
     display: inline-block;
     color: #A4A4A4;
     vertical-align: top; }
+    .consult__icon-item-big {
+      line-height: 10px; }
   .consult__desc {
     display: inline-block;
     max-width: 440px;
@@ -275,3 +283,27 @@ a {
     font-size: 12px;
     line-height: 14px;
     color: #A4A4A4; }
+
+.footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #1F1F1F; }
+  .footer__logo, .footer__times, .footer__designed, .footer__btn {
+    vertical-align: middle; }
+  .footer__logo {
+    margin-right: 10px; }
+  .footer__times {
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 13px;
+    color: #999999;
+    margin-right: 15px; }
+  .footer__designed {
+    display: inline-block;
+    margin-right: 10px; }
+  .footer__btn {
+    display: inline-block;
+    font-size: 12px; }

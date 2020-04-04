@@ -10,22 +10,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    &__logo {
-        display: inline-block;
-        &-img {
-            width: 150px;
-            height: 50px;
-        }
-    }
+    
     &__btn {
         display: inline-block;
-        padding: 11px 18px;
-        border: 2px solid #ffffff;
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 500;
         font-size: 12px;
-        color: #ffffff;
         float: right;
         margin-top: 7px;
     }
@@ -44,6 +32,23 @@
         &-3 {
             display: inline-block;
         }
+    }
+}
+
+.btn {
+    padding: 11px 18px;
+    border: 2px solid #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.logo {
+    display: inline-block;
+    &-img {
+        width: 150px;
+        height: 50px;
     }
 }
 
@@ -296,22 +301,29 @@
 
 .consult {
     margin-top: 20px;
-    &__title {
-        margin-bottom: 15px;
+    padding-bottom: 26px;
+    &__title, &__text {
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
-        line-height: 21px; 
-        color: #000000; 
+        line-height: 21px;
+        color: #000000;
+    }
+    &__title {
+        margin-bottom: 15px;
     }
     &__list {
         padding-left: 25px;
+        margin-bottom: 15px;
     }
     &__icon {
         display: inline-block;
         color: #A4A4A4;
         vertical-align: top;
+        &-item-big {
+            line-height: 10px;
+        }
     }
     &__desc {
         display: inline-block;
@@ -322,5 +334,35 @@
         font-size: 12px;
         line-height: 14px;
         color: #A4A4A4;
+    }
+}
+
+.footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #1F1F1F;
+    &__logo, &__times, &__designed, &__btn {
+        vertical-align: middle;
+    }
+    &__logo {
+        margin-right: 10px;
+    }
+    &__times {
+        display: inline-block;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 13px;
+        color: #999999;
+        margin-right: 15px;
+    }
+    &__designed {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    &__btn {
+        display: inline-block;
+        font-size: 12px;
     }
 }
