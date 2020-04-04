@@ -20,10 +20,24 @@ a {
 .wrapper {
   width: 600px;
   margin: 0 auto; }
+  @media screen and (max-width: 550px) {
+    .wrapper {
+      width: 375px; } }
 
 .container {
   width: 560px;
   margin: 0 auto; }
+  @media screen and (max-width: 550px) {
+    .container {
+      width: 335px; } }
+
+.btn {
+  padding: 11px 18px;
+  border: 2px solid #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #ffffff; }
 
 .header {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.21) 100%), rgba(0, 0, 0, 0.5);
@@ -39,6 +53,12 @@ a {
     font-size: 12px;
     float: right;
     margin-top: 7px; }
+    @media screen and (max-width: 550px) {
+      .header__btn {
+        border: unset;
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 10px; } }
   .header__title {
     margin-top: 90px;
     text-align: center;
@@ -52,14 +72,6 @@ a {
       display: inline-block; }
     .header__title-3 {
       display: inline-block; }
-
-.btn {
-  padding: 11px 18px;
-  border: 2px solid #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  color: #ffffff; }
 
 .logo {
   display: inline-block; }
@@ -85,6 +97,9 @@ a {
     .hello__welcome-desc {
       display: inline-block;
       width: 74%; }
+      @media screen and (max-width: 550px) {
+        .hello__welcome-desc {
+          width: 57%; } }
     .hello__welcome-title-text {
       display: inline-block;
       margin-right: 7px;
@@ -93,11 +108,18 @@ a {
       font-weight: bold;
       font-size: 18px;
       line-height: 21px; }
+      @media screen and (max-width: 550px) {
+        .hello__welcome-title-text {
+          font-size: 14px;
+          line-height: 16px; } }
     .hello__welcome-title-separator {
       display: inline-block;
       width: 265px;
       border-top: 2px solid #000000;
       vertical-align: middle; }
+      @media screen and (max-width: 550px) {
+        .hello__welcome-title-separator {
+          width: 72px; } }
     .hello__welcome-text {
       margin-top: 16px;
       padding-right: 20px; }
@@ -109,6 +131,10 @@ a {
         line-height: 14px;
         text-align: justify;
         color: #7B7B7B; }
+        @media screen and (max-width: 550px) {
+          .hello__welcome-text p {
+            font-size: 9px;
+            line-height: 10px; } }
       .hello__welcome-text strong {
         font-weight: 700;
         color: #000000; }
@@ -117,15 +143,28 @@ a {
     height: 206px; }
     .hello__gallery-pic-1, .hello__gallery-pic-2 {
       margin-right: 7px; }
+      @media screen and (max-width: 550px) {
+        .hello__gallery-pic-1, .hello__gallery-pic-2 {
+          margin-right: 5px; } }
+    @media screen and (max-width: 550px) {
+      .hello__gallery-pic {
+        width: 108px;
+        height: 123px; } }
 
 .services__title {
   text-align: center;
   margin-bottom: 48px; }
+  @media screen and (max-width: 550px) {
+    .services__title {
+      margin-bottom: 26px; } }
   .services__title__separator {
     display: inline-block;
     width: 98px;
     border-top: 2px solid #000000;
     vertical-align: middle; }
+    @media screen and (max-width: 550px) {
+      .services__title__separator {
+        width: 86px; } }
   .services__title-text {
     display: inline-block;
     margin-left: 10px;
@@ -136,6 +175,12 @@ a {
     font-size: 18px;
     text-transform: uppercase;
     color: #000000; }
+    @media screen and (max-width: 550px) {
+      .services__title-text {
+        font-size: 14px;
+        line-height: 16px;
+        margin-left: 25px;
+        margin-right: 25px; } }
 .services__icons {
   text-align: center; }
   .services__icons__row-1 {
@@ -145,8 +190,17 @@ a {
     display: inline-block;
     vertical-align: top;
     text-align: center; }
+    @media screen and (max-width: 550px) {
+      .services__icons__item {
+        width: 75px; } }
     .services__icons__item-01, .services__icons__item-02, .services__icons__item-03, .services__icons__item-05 {
       margin-right: 15px; }
+      @media screen and (max-width: 550px) {
+        .services__icons__item-01, .services__icons__item-02, .services__icons__item-03, .services__icons__item-05 {
+          margin-right: 7px; } }
+  @media screen and (max-width: 550px) {
+    .services__icons__img {
+      width: 38px; } }
   .services__icons__text {
     font-family: Roboto;
     font-style: normal;
@@ -155,6 +209,11 @@ a {
     color: #000000;
     margin-top: 17px;
     line-height: 16px; }
+    @media screen and (max-width: 550px) {
+      .services__icons__text {
+        font-size: 9px;
+        line-height: 11px;
+        margin-top: 2px; } }
 
 .advantages {
   background-image: url("../img/services/services-bg.jpg");
@@ -167,9 +226,16 @@ a {
   .advantages__container {
     width: 100%; }
   .advantages__content {
-    margin-left: 67px; }
+    margin-top: 12px;
+    padding-left: 67px; }
+    @media screen and (max-width: 550px) {
+      .advantages__content {
+        padding-left: 20px; } }
   .advantages__item-1, .advantages__item-2 {
     margin-bottom: 7px; }
+    @media screen and (max-width: 550px) {
+      .advantages__item-1, .advantages__item-2 {
+        margin-bottom: 0; } }
   .advantages__title {
     text-align: center;
     font-family: Roboto;
@@ -178,20 +244,32 @@ a {
     font-size: 18px;
     color: #000000;
     line-height: 21px; }
-  .advantages__content {
-    margin-top: 12px; }
+    @media screen and (max-width: 550px) {
+      .advantages__title {
+        font-size: 14px;
+        line-height: 16px; } }
   .advantages__icon {
     display: inline;
     margin-right: 14px;
     width: 100%;
     height: 100%;
     vertical-align: top; }
+    @media screen and (max-width: 550px) {
+      .advantages__icon {
+        margin-right: 3px; } }
   .advantages__pic {
     width: 14px;
     height: 12px; }
+    @media screen and (max-width: 550px) {
+      .advantages__pic {
+        width: 10px;
+        height: 9px; } }
   .advantages__desc {
     display: inline-block;
     max-width: 450px; }
+    @media screen and (max-width: 550px) {
+      .advantages__desc {
+        max-width: 320px; } }
   .advantages__subtitle {
     display: inline-block;
     font-family: Roboto;
@@ -199,7 +277,12 @@ a {
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
-    color: #000000; }
+    color: #000000;
+    text-transform: uppercase; }
+    @media screen and (max-width: 550px) {
+      .advantages__subtitle {
+        font-size: 10px;
+        line-height: 12px; } }
   .advantages__text {
     display: inline;
     font-family: Roboto;
@@ -208,9 +291,16 @@ a {
     font-size: 12px;
     line-height: 14px;
     color: #7B7B7B; }
+    @media screen and (max-width: 550px) {
+      .advantages__text {
+        font-size: 9px;
+        line-height: 11px; } }
 
 .order {
   padding-top: 22px; }
+  @media screen and (max-width: 550px) {
+    .order {
+      padding-top: 20px; } }
   .order__text {
     font-family: Roboto;
     font-style: normal;
@@ -219,6 +309,10 @@ a {
     line-height: 16px;
     text-align: justify;
     color: #7B7B7B; }
+    @media screen and (max-width: 550px) {
+      .order__text {
+        font-size: 9px;
+        line-height: 11px; } }
     .order__text strong {
       color: #000000; }
   .order__buttons {
@@ -227,6 +321,9 @@ a {
     width: 270px;
     height: 50px;
     display: inline-block; }
+    @media screen and (max-width: 550px) {
+      .order__btn {
+        width: 157px; } }
     .order__btn-email, .order__btn-text, .order__btn-phone {
       font-family: Roboto;
       font-style: normal;
@@ -239,6 +336,11 @@ a {
       line-height: 19px;
       text-transform: uppercase;
       padding-top: 16px; }
+      @media screen and (max-width: 550px) {
+        .order__btn-email {
+          font-size: 12px;
+          line-height: 14px;
+          padding-top: 18px; } }
     .order__btn-call {
       background-color: #F2F2F2;
       float: right;
@@ -247,15 +349,28 @@ a {
       font-weight: normal;
       font-size: 12px;
       line-height: 14px; }
+      @media screen and (max-width: 550px) {
+        .order__btn-text {
+          font-size: 10px;
+          line-height: 14px; } }
     .order__btn-phone {
       font-weight: 700;
       font-size: 24px;
       line-height: 14px;
       margin-top: 10px; }
+      @media screen and (max-width: 550px) {
+        .order__btn-phone {
+          font-size: 12px;
+          line-height: 14px;
+          margin-top: 0; } }
 
 .consult {
   margin-top: 20px;
   padding-bottom: 26px; }
+  @media screen and (max-width: 550px) {
+    .consult {
+      margin-top: 23px;
+      padding-bottom: 18px; } }
   .consult__title, .consult__text {
     font-family: Roboto;
     font-style: normal;
@@ -263,6 +378,10 @@ a {
     font-size: 18px;
     line-height: 21px;
     color: #000000; }
+    @media screen and (max-width: 550px) {
+      .consult__title, .consult__text {
+        font-size: 14px;
+        line-height: 16px; } }
   .consult__title {
     margin-bottom: 15px; }
   .consult__list {
@@ -283,6 +402,11 @@ a {
     font-size: 12px;
     line-height: 14px;
     color: #A4A4A4; }
+    @media screen and (max-width: 550px) {
+      .consult__desc {
+        font-size: 10px;
+        line-height: 12px;
+        max-width: 295px; } }
 
 .footer {
   padding-top: 15px;
@@ -292,6 +416,13 @@ a {
     vertical-align: middle; }
   .footer__logo {
     margin-right: 10px; }
+    @media screen and (max-width: 550px) {
+      .footer__logo {
+        margin-right: 15px; } }
+    @media screen and (max-width: 550px) {
+      .footer__logo-img {
+        width: 102px;
+        height: 34px; } }
   .footer__times {
     display: inline-block;
     font-family: Roboto;
@@ -301,9 +432,24 @@ a {
     line-height: 13px;
     color: #999999;
     margin-right: 15px; }
+    @media screen and (max-width: 550px) {
+      .footer__times {
+        font-size: 10px;
+        line-height: 13px;
+        margin-right: 14px; } }
   .footer__designed {
     display: inline-block;
     margin-right: 10px; }
+    @media screen and (max-width: 550px) {
+      .footer__designed {
+        display: none; } }
   .footer__btn {
     display: inline-block;
     font-size: 12px; }
+    @media screen and (max-width: 550px) {
+      .footer__btn {
+        font-size: 10px;
+        line-height: 12px;
+        width: 78px;
+        text-align: center;
+        padding: 10px; } }
