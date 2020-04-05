@@ -1,15 +1,15 @@
 // resolutions
-$phones: 550px;
-$desktop: 600px;
+$phones: 1100px;
+$desktop: 3000px;
 
 @mixin desktop {
-	@media screen and (max-width: $desktop) {
+	@media screen and (max-device-width: $desktop) {
 		@content;
 	}
 }
 
 @mixin phones {
-	@media screen and (max-width: $phones) {
+	@media screen and (max-device-width: $phones) {
 		@content;
 	}
 }
